@@ -1,0 +1,38 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="drawerArrowStyle">@style/DrawerIcon</item>
+    </style>
+
+    <!-- Drawer Icon Color Change -->
+    <style name="DrawerIcon" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="color">@android:color/white</item>
+    </style>
+
+    <!-- Title Style card -->
+    <style name="card_title_style">
+        <item name="android:textColor">@color/colorText</item>
+        <item name="fontFamily">@font/balsamiq_sans_bold</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/txt_22</item>
+        <item name="android:layout_margin">@dimen/ly_6</item>
+
+    </style>
+
+    <!-- Other Card style -->
+    <style name="card_info_style">
+        <item name="android:layout_marginStart">@dimen/ly_6</item>
+        <item name="android:ellipsize">end</item>
+        <item name="maxLines">1</item>
+        <item name="fontFamily">@font/balsamiq_sans_regular</item>
+        <item name="android:textColor">@color/colorText</item>
+        <item name="android:drawablePadding">@dimen/ly_4</item>
+        <item name="android:layout_marginTop">@dimen/ly_4</item>
+        <item name="android:textSize">@dimen/txt_18</item>
+    </style>
+
+</resources>

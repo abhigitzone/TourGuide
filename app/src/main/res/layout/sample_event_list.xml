@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/ly_6"
+    android:layout_marginTop="@dimen/ly_6"
+    android:layout_marginEnd="@dimen/ly_6"
+    android:layout_marginBottom="@dimen/ly_6"
+    android:orientation="vertical"
+    app:cardBackgroundColor="@color/background"
+    app:cardCornerRadius="@dimen/ly_8"
+    app:cardElevation="@dimen/ly_6">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/event_Img"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ly_220"
+            android:scaleType="fitXY"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/event_title"
+            style="@style/card_title_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/event_Img"
+            android:text="@string/app_name" />
+
+        <TextView
+            android:id="@+id/event_info"
+            style="@style/card_info_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/event_title"
+            android:text="@string/information" />
+
+        <TextView
+            android:id="@+id/event_time"
+            style="@style/card_info_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/event_info"
+            android:drawableStart="@drawable/ic_baseline_access_time_24"
+            android:text="@string/opening" />
+
+        <TextView
+            android:id="@+id/event_location"
+            style="@style/card_info_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/event_time"
+            android:drawableStart="@drawable/ic_baseline_location_on_24"
+            android:text="@string/location" />
+
+        <TextView
+            android:id="@+id/event_web"
+            style="@style/card_info_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/event_location"
+            android:autoLink="web"
+            android:drawableStart="@drawable/ic_baseline_link_24"
+            android:text="@string/web" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
